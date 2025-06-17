@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feedback Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    article {
+      background-color: #fff;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #1565c0;
+    }
+
+    aside {
+      margin-top: 30px;
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-left: 5px solid #2196f3;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <h2>Feedback Form</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <aside>
+      <h3>What is Web Storage?</h3>
+      <p><strong>localStorage</strong> and <strong>sessionStorage</strong> are part of the Web Storage API that allow websites to store data in the browser.</p>
+      <ul>
+        <li><strong>localStorage</strong> stores data with no expiration time. The data remains even after the browser is closed or the computer is restarted.</li>
+        <li><strong>sessionStorage</strong> stores data for the duration of a page session. It is cleared when the page is closed.</li>
+      </ul>
+      <p>These are commonly used to remember user preferences, save form data temporarily, and improve user experience without server interaction.</p>
+    </aside>
+  </article>
+
+</body>
+</html>

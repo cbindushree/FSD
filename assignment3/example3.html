@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header, nav, main, section, article, footer {
+      padding: 20px;
+      margin: 10px;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav {
+      background: #555;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    video, audio {
+      margin: 20px 0;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bindushree</h1>
+    <p>Web Developer | Designer | Creator</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm Bindushree C, a passionate web developer with experience in building responsive and user-friendly websites.</p>
+    </section>
+
+    <section id="media">
+      <h2>Introduction Video</h2>
+      <video width="320" height="240" controls>
+        <source src="index (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Background Music</h3>
+      <audio controls autoplay loop>
+        <source src="relaxing-krishna-flute-music-deep-sleep-relaxing-music-292793.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <article>
+        <h3>Portfolio Website</h3>
+        <p>Built a responsive and accessible personal portfolio using HTML5 and CSS3.</p>
+      </article>
+      <article>
+        <h3>To-Do App</h3>
+        <p>Developed a to-do list app using JavaScript with local storage support.</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <ul>
+        <li>Email: bindusreec06@gmail.com</li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/johndoe">linkedin.com/in/Bindushree</a></li>
+        <li>GitHub: <a href="https://github.com/johndoe">github.com/Bindushree</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bindushree. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
